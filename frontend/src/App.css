@@ -1,0 +1,47 @@
+.main-container{
+    background: rgb(24,0,36);
+    background: linear-gradient(90deg, rgba(24,0,36,0.6638304980195203) 0%, rgba(81,211,226,1) 35%, rgba(71,121,243,1) 60%, rgba(171,0,255,0.6078080890559349) 100%);
+}
+#reasoning{
+    background-image: url('./assets/bg.png');
+    background-position-x: center;
+
+}
+.options{
+    border: solid 2px;
+    margin-top: 20px;
+    display: block;
+}
+.alarm{
+    animation: slideleft 2s linear infinite;
+}
+@keyframes slideleft{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+#options{
+    margin-top: 190px;
+}
+#options>button{
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    height: 30px;
+    background-color: brown;
+    display: block;
+    border: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    
+}
+.correct{
+    background-color: green;
+}
+.error{
+    background-color: red;
+}

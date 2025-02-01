@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import axios from "axios"
+import axios from 'axios'
 import bg from '../assets/bg.png'
 import clock from '../assets/clock.mp3';
 import watch from '../assets/watch.mp3';
@@ -48,7 +48,7 @@ export default function Home() {
     
     },[])
     let quiz = async() =>{
-      let result = await axios.get('http://localhost:3000/quiz');
+      let result = await axios.get('https://quizapp-dckg.onrender.com/quiz');
       setData(result.data.questions)
       console.log(data)
      
